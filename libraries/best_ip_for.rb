@@ -1,3 +1,5 @@
+# Returns best ip based for other node on cloud/no-cloud if/else conditions.
+#
 module BestIpFor
   def best_ip_for(other)
     if other['cloud']
