@@ -3,6 +3,19 @@
 default['bpc']['client']['user'] = 'backupper'
 default['bpc']['client']['group'] = 'backupper'
 
+# User password. This password is not really used (ssh connection is key-
+# based), but without a password, and sshd's `UsePAM` set to `no`, the
+# connection cannot be established due to the fact that the password field in
+# the shadow file contains "!", which sshd then intrepids as a "locked
+# account":
+#
+#   User backupper not allowed because account is locked
+#
+# If you have a need to know this password, you should override it with your
+# own.
+#
+default['bpc']['client']['password'] = '$1$5qqoausM$Z.6DBdz6wbyaEnxIxabjE/'
+
 # Home directory for the backupper user, used to store .ssh/authorized_keys
 # which includes the public key of the `backuppc` user on the BackupPC server.
 #

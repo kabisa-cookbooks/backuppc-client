@@ -15,6 +15,7 @@ user 'backupper' do
   home     node['bpc']['client']['home']
   username node['bpc']['client']['user']
   gid      node['bpc']['client']['group']
+  password node['bpc']['client']['password']
   shell    '/bin/sh'
   system   true
   comment  'used by BackupPC server to backup node. Restricted to rsync only.'
