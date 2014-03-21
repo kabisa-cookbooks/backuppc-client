@@ -53,7 +53,7 @@ else
     variables(
       public_key: public_key,
       restrictions: [
-        (%Q{from="#{ipaddress}"} if ipaddress),
+        (%Q(from="#{ipaddress}") if ipaddress),
         'no-agent-forwarding',
         'no-port-forwarding',
         'no-X11-forwarding',
