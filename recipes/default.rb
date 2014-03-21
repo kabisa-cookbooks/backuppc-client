@@ -63,7 +63,7 @@ else
   end
 end
 
-sudo 'backuppc_rsync' do
+sudo 'backupper_rsync' do
   action    :install
   user      node['bpc']['client']['user']
   nopasswd  true
