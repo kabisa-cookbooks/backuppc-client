@@ -2,7 +2,7 @@
 
 Contrary to the cookbook title, this cookbook *does not* install any client
 application. It does however prepare the node in question to be accessible by
-the BackupPC server and set some sane defaults for backupping the node.
+the BackupPC server and set some sane defaults for backing up the node.
 
 For this cookbook to be of any use, you should first set up a BackupPC server
 node using the [backuppc-server][] cookbook.
@@ -22,7 +22,7 @@ node using the [backuppc-server][] cookbook.
 ## Attributes
 
 See the [default][] attribute files for configuration variables and their
-exlanation.
+explanation.
 
 [default]: attributes/default.rb
 
@@ -37,8 +37,8 @@ the default recipe:
 include_recipe 'backuppc-client::default'
 ```
 
-Your BackupPC server will find the nodes depending on this cookbook and use the
-defined attributes from this cookbook to set-up the backup strategy.
+Your BackupPC server will find the nodes depending on this cookbook and uses the
+defined cookbook attributes to configure the backup strategy.
 
 ## TODO
 

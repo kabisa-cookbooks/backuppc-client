@@ -4,6 +4,6 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  backuppc-client (0.1.0)
+  backuppc-client (1.0.0)
     sudo (~> 2.5.2)
   sudo (2.5.2)

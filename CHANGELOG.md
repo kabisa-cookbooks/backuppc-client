@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.0
+
+- fix Rubocop warnings
+
 ## 0.9.1
 
 - add default "backupper" user password
